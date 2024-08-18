@@ -289,7 +289,7 @@ class BasePredictor:
         if self.args.verbose and self.seen:
             t = tuple(x.t / self.seen * 1e3 for x in profilers)  # speeds per image
             LOGGER.info(
-                f"Speed: %.1fms preprocess, %.1fms inference, %.1fms postprocess per image at shape "
+                f"MySpeed: %.1fms preprocess, %.1fms inference, %.1fms postprocess per image at shape "
                 f"{(min(self.args.batch, self.seen), 3, *im.shape[2:])}" % t
             )
         if self.args.save or self.args.save_txt or self.args.save_crop:
