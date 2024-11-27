@@ -173,3 +173,9 @@ calibration_*.npy
 
 *.jpg
 /pcbobb
+
+data_zoo
+weight
+labels/
+trainhbb.txt
+valhbb.txt
